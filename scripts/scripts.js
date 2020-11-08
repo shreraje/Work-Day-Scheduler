@@ -22,4 +22,22 @@ $(document).ready(function () {
       $(`#${property}`).val(taskObj[property])
    }
 
+   // Color Coding to indicate past, present or future hours
+   function changeColor() {
+      var currentHour = moment().hours();
+      console.log(currentHour);
+      $(".hour").each(function () {
+         var timeHour = parseInt($(this).attr("id"));
+         if (timeHour < currentHour) {
+            $(this).addClass("past");
+         } else if (timeHour === currentHour) {
+            $(this).addClass("present");
+            $(this).removeClass("past");
+         } else if (timeHour > currentHour) {
+            $(this).addClass("future");
+            $(this).removeClass("present" & "past");
+         }
+      });
+   }
+   changeColor();
 });
