@@ -1,4 +1,4 @@
-// grouping all codes when DOM is ready 
+// grouping all codes when DOM is ready & tells engine to load html & css first
 $(document).ready(function () {
 
    // Current day date format
@@ -24,18 +24,26 @@ $(document).ready(function () {
 
    // Color Coding to indicate past, present or future hours
    function changeColor() {
+      // Get current time
       var currentHour = moment().hours();
-      console.log(currentHour);
+
+      // Looping over time blocks
       $(".hour").each(function () {
          var timeHour = parseInt($(this).attr("id"));
+         console.log(currentHour, timeHour);
+
          if (timeHour < currentHour) {
             $(this).addClass("past");
+
          } else if (timeHour === currentHour) {
             $(this).addClass("present");
-            $(this).removeClass("past");
+            $(this).removeClass("past" & "future");
+            // $(this).removeClass("future");
+
          } else if (timeHour > currentHour) {
             $(this).addClass("future");
             $(this).removeClass("present" & "past");
+            // $(this).removeClass("past");
          }
       });
    }
