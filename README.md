@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/License-GNU AGPLv3.0-blue.svg" alt="License image of GNU AGPLv3.0" />
   
 ## Description
-This app is to create a calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. the [Moment.js](https://momentjs.com/) library was used to work with date and time. 
+This app is to create a calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. The [Moment.js](https://momentjs.com/) library was used to work with date and time. 
 
 ## Table of Contents
 * [Description](#description)
@@ -15,10 +15,10 @@ This app is to create a calendar application that allows the user to save events
 * [Contacts](#contacts)
 
 ## User Story
-AS an employee with a busy schedule, I would like to add important events to a daily planner so that I can manage my time effectively.
+As an employee with a busy schedule, I would like to add important events to a daily planner so that I can manage my time effectively.
 
 ## Technologies
-- JavaScript, JQuery, HTML & CSS
+- JavaScript, JQuery, HTML, CSS & Moment.js library(for date & time).
 
 ## Screenshots
 Deployed App Screenshots:
